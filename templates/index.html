@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bingo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div class="bingo-container">
+      <h1>B I N G O</h1>
+      <div class="bingo-grid">
+        <div class="bingo-cell" onclick="toggleCheck(this)">1</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">2</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">3</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">4</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">5</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">6</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">7</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">8</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">9</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">10</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">11</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">12</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">13</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">14</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">15</div>
+        <div class="bingo-cell" onclick="toggleCheck(this)">16</div>
+      </div>
+      <div id="bingo-message">BINGO!</div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Jordi Lowski. All rights reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
